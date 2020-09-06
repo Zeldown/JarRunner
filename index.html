@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>PalaEvent</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="js/app.js" unsafe-inline></script>
+  </head>
+  <body>
+    <!-- ZeldownJS > FaustinJS -->
+    <h1 class="title">PalaEvent</h1>
+    <div class="content">
+      <div class="left">
+        <a class="button button-file" onclick="selectFile()">Selection du fichier</a>
+        <br>
+        <p class="file-path">$chemin du fichier</p>
+        <br><br><br>
+        <a class="button button-folder" onclick="selectFolder()">Selection du chemin de sortie</a>
+        <br>
+        <p class="folder-path">$chemin du dossier</p>
+        <div class="inline-box">
+          <h2>Xms</h2>
+          <div class="dropdown xms">
+            <p class="dropdown-item">1G</p>
+            <p class="dropdown-item">2G</p>
+            <p class="dropdown-item">3G</p>
+            <p class="dropdown-item">4G</p>
+            <p class="dropdown-item">5G</p>
+            <p class="dropdown-item">6G</p>
+            <p class="dropdown-item">7G</p>
+            <p class="dropdown-item">8G</p>
+          </div>
+        </div>
+        <div class="inline-box">
+          <h2>Xmx</h2>
+          <div class="dropdown xmx">
+            <p class="dropdown-item">1G</p>
+            <p class="dropdown-item">2G</p>
+            <p class="dropdown-item">3G</p>
+            <p class="dropdown-item">4G</p>
+            <p class="dropdown-item">5G</p>
+            <p class="dropdown-item">6G</p>
+            <p class="dropdown-item">7G</p>
+            <p class="dropdown-item">8G</p>
+          </div>
+        </div>
+        Auto accepte EULA<input class="eula" type="checkbox">
+        <br><br>
+        <a class="button button-file" onclick="run()">Executer !</a>
+      </div>
+      <vr></vr>
+      <div class="right">
+        <div class="logs">
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

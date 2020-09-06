@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 50px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+
+.title {
+    font-size: 3em;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    min-height: 60vh;
+}
+
+.left {
+    position: relative;
+    display: block;
+    width: fit-content;
+}
+
+.button {
+    position: relative;
+    padding: 7px 12px;
+    border: 2px solid white;     
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.button:hover {
+    background: white;
+    color: rgb(70, 70, 70);
+}
+
+.file-path, .folder-path {
+    color: rgb(177, 177, 177);
+    font-size: 0.5em;
+    text-align: center;
+}
+
+.inline-box {
+    position: relative;
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-left: 20px;
+    padding: 5px 10px;
+    width: 100px;
+    border: 2px solid white;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.dropdown::after {
+    content: '▼';
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    display: block;
+    height: fit-content;
+    transition: all .5s;
+}
+
+.dropdown-active::after {
+    transform: rotateZ(180deg);
+}
+
+.dropdown-item {
+    position: relative;
+    padding: 10px;
+    margin: 0;
+    transition: all .5s;
+    border-radius: 10px;
+}
+
+.dropdown-item:hover {
+    color: black;
+    background: white;
+}
+
+vr {
+    position: relative;
+    display: block;
+    width: 4px;
+    background: white;
+    top: 5%;
+}
+
+.right {
+    position: relative;
+    width: 50%;
+    border-radius: 10px;
+    border: 2px solid white;
+    padding: 10px;
+    height: 70vh;
+}
+
+.logs {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    font-weight: 300;
+    font-size: 0.8em;
+    color: rgb(120,120,120);
+    white-space: nowrap;
+}
+
+.logs p {
+    margin: 0;
+}
+
+.left {
+    max-width: 40%;
+}

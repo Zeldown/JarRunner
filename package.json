@@ -1,0 +1,25 @@
+{
+  "name": "palaevent",
+  "version": "1.0.0",
+  "description": "A program for Paladium",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Zeldown",
+  "devDependencies": {
+    "electron": "^10.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/electron/electron-quick-start.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/electron/electron-quick-start/issues"
+  },
+  "homepage": "https://github.com/electron/electron-quick-start#readme",
+  "dependencies": {
+    "fs": "0.0.1-security"
+  }
+}
